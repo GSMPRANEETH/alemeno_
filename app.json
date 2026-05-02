@@ -16,6 +16,9 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -23,6 +26,14 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Marker Scanner to capture frames for custom marker detection."
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
